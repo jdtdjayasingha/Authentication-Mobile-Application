@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "994461225426",
+    "project_id": "authentication-mobile-ap-5c484",
+    "storage_bucket": "authentication-mobile-ap-5c484.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:994461225426:android:e1d17aa98eef5c69f3380b",
+        "android_client_info": {
+          "package_name": "com.example.authentication_mobile_application"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJ2eMs_gDyMVS-6r25k7cZeD36Y-ZKvDE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
