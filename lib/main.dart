@@ -1,4 +1,4 @@
-import 'package:authentication_mobile_application/screens/authentication/register.dart';
+import 'package:authentication_mobile_application/screens/view/home.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,6 +10,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Register();
+    return const Home();
   }
 }
