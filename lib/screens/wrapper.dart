@@ -1,3 +1,4 @@
+import 'package:authentication_mobile_application/screens/authentication/authenticate.dart';
 import 'package:flutter/material.dart';
 
 class Wrapper extends StatelessWidget {
@@ -5,12 +6,6 @@ class Wrapper extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text("Wrapper"),
-        ),
-      ),
-    );
+    return const Authenticate();
   }
 }

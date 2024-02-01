@@ -1,7 +1,11 @@
-import 'package:authentication_mobile_application/screens/view/home.dart';
+import 'package:authentication_mobile_application/screens/authentication/login.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
-void main() {
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform,);
   runApp(const MyApp());
 }
 
@@ -10,6 +14,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Home();
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Login(),
+    );
   }
 }

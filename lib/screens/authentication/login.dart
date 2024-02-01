@@ -1,3 +1,4 @@
+import 'package:authentication_mobile_application/services/authentication.dart';
 import 'package:flutter/material.dart';
 
 class Login extends StatefulWidget {
@@ -8,13 +9,24 @@ class Login extends StatefulWidget {
 }
 
 class _LoginState extends State<Login> {
+  final AuthenticationServices _auth = AuthenticationServices();
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text("Login"),
-        ),
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("SIGN IN"),
+      ),
+      body: ElevatedButton(
+        child: const Text("Sign In Anonymously"),
+        onPressed: () async {
+          dynamic resuult = await _auth.signInAnonymously();
+          if (resuult == Null) {
+            print("Error sign in Anonymously");
+          } else {
+            print("Sign in Anonymously");
+            print(resuult);
+          }
+        },
       ),
     );
   }

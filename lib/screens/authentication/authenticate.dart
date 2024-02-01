@@ -1,3 +1,4 @@
+import 'package:authentication_mobile_application/screens/authentication/login.dart';
 import 'package:flutter/material.dart';
 
 class Authenticate extends StatefulWidget {
@@ -10,12 +11,6 @@ class Authenticate extends StatefulWidget {
 class _AuthenticateState extends State<Authenticate> {
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text("Authenticate"),
-        ),
-      ),
-    );
+    return const Login();
   }
 }
