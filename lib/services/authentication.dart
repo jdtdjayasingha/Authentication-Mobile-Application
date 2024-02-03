@@ -1,6 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 
-class AuthenticationServices {
+class AuthServices {
   final FirebaseAuth _auth = FirebaseAuth.instance;
 
   Future signInAnonymously() async {

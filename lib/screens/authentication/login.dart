@@ -9,22 +9,24 @@ class Login extends StatefulWidget {
 }
 
 class _LoginState extends State<Login> {
-  final AuthenticationServices _auth = AuthenticationServices();
+  final AuthServices _auth = AuthServices();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.red,
         title: const Text("SIGN IN"),
       ),
       body: ElevatedButton(
         child: const Text("Sign In Anonymously"),
         onPressed: () async {
-          dynamic resuult = await _auth.signInAnonymously();
-          if (resuult == Null) {
+          await _auth.signInAnonymously();
+          dynamic resulut = await _auth.signInAnonymously();
+          if (resulut == Null) {
             print("Error sign in Anonymously");
           } else {
             print("Sign in Anonymously");
-            print(resuult);
+            print(resulut);
           }
         },
       ),
