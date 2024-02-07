@@ -1,4 +1,4 @@
-import 'package:authentication_mobile_application/services/authentication.dart';
+import 'package:authentication_mobile_application/services/auth.dart';
 import 'package:flutter/material.dart';
 
 class Login extends StatefulWidget {
@@ -25,8 +25,8 @@ class _LoginState extends State<Login> {
           if (resulut == Null) {
             print("Error sign in Anonymously");
           } else {
-            print("Sign in Anonymously");
-            print(resulut);
+            print("Signed in Anonymously");
+            print(resulut.uid);
           }
         },
       ),
